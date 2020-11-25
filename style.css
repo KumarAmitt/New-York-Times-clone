@@ -32,13 +32,11 @@ p > span {
 /* CSS for Header */
 
 .header {
-  /* border: 5px solid red; */
   padding: 0.2em 0.5em;
   border-bottom: 1px solid gray;
 }
 
 .header-container {
-  /* border: 2px solid blue; */
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -46,12 +44,7 @@ p > span {
   padding: 0;
 }
 
-.header-container > li {
-  /* border: 2px solid red; */
-}
-
-.header-container > .left > ul {
-  /* border: 1px solid green; */
+.left > ul {
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -70,6 +63,7 @@ p > span {
 }
 
 .article-title > a {
+  display: block;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -81,18 +75,14 @@ p > span {
   text-decoration: underline;
 }
 
-.left > ul > li > a{
-  display: block;
-}
-
-.header-container > .right > ul {
+.right > ul {
   display: flex;
   list-style-type: none;
   padding: 0.2em;
   margin: 0;
 }
 
-.header-container > .right > ul li a {
+.right > ul li a {
   display: block;
   background-color: royalblue;
   color: #fff;
@@ -105,7 +95,7 @@ p > span {
   font-weight: 700;
 }
 
-.header-container > .right > ul li a:hover {
+.right > ul li a:hover {
   background-color: rgb(50, 50, 163);
 }
 
@@ -126,10 +116,6 @@ p > span {
 
 /* CSS for cover image */
 
-/* .main > figure {
-  background-color: yellow;
-} */
-
 .cover-image {
   display: block;
   max-width: 100%;
@@ -149,13 +135,7 @@ p > span {
 /* CSS for ARTICLE section */
 
 .article {
-  /* margin: 2em auto 0;
-  max-width: 640px; */
   font-size: 1.2rem;
-}
-
-.author {
-  font-size: 1rem;
 }
 
 .article-header, .main-content {
@@ -163,42 +143,41 @@ p > span {
   max-width: 640px;
 }
 
-.main-content > h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
+.author {
+  font-size: 1rem;
 }
 
-.article-header > .sub-info {
+.sub-info {
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid blue; */
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
+time {
+  font-size: 0.8rem;
+}
+
+
 .social-links {
-  /* border: 2px solid red; */
   display: flex;
   list-style-type: none;
   padding: 0;
 }
 
-.social-links li {
-  /* border: 2px solid green; */
-}
-
 .social-links > li > a {
   display: block;
-  margin: 0 .5em;
-}
-
-time {
-  /* border: 2px solid red; */
-  font-size: 0.8rem;
+  margin: 0 0.5em;
 }
 
 /* CSS for advt class */
+
+.advt p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0.5em auto;
+}
 
 .advt-top {
   border-top: 0.5px solid gray;
@@ -208,14 +187,13 @@ time {
   text-align: center;
 }
 
-.advt p {
-  font-size: 0.9rem;
-  font-weight: 700;
-  margin: 0.5em auto;
-}
-
 .advt-top a {
   color: aqua;
+}
+
+.main-content > h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 /* CSS for Inflaction Image */
@@ -295,6 +273,10 @@ iframe .video {
   font-size: 0.8rem;
 }
 
+.article-footer > small > span + span {
+  border-left: 1.5px solid gray;
+}
+
 .article-footer > small a {
   padding: 0 0.4em;
   color: #000;
@@ -304,10 +286,6 @@ iframe .video {
   text-decoration: none;
 }
 
-.article-footer > small > span + span {
-  border-left: 1.5px solid gray;
-}
-
 .comment-section > ul {
   display: flex;
   list-style-type: none;
@@ -315,7 +293,7 @@ iframe .video {
   padding: 0;
 }
 
-.comment-section .read-button a {
+.read-button a {
   background-color: blue;
   color: #fff;
   padding: 0.8em 5em;
@@ -334,7 +312,6 @@ iframe .video {
 /* CSS for page footer */
 
 .master-footer {
-  /* border: 2px solid red; */
   margin: 1em;
 }
 
@@ -364,10 +341,6 @@ iframe .video {
   padding: 0;
 }
 
-.master-footer > .middle-section .section-title {
-  font-weight: 700;
-}
-
 .master-footer > .middle-section > ul > li > a {
   color: #000;
   text-decoration: none;
@@ -376,6 +349,10 @@ iframe .video {
 
 .master-footer > .middle-section > ul > li > a:not(.section-title):hover {
   text-decoration: underline;
+}
+
+.master-footer > .middle-section .section-title {
+  font-weight: 700;
 }
 
 .master-footer .bottom-section > ul {
@@ -397,5 +374,3 @@ iframe .video {
 .master-footer .bottom-section > ul a:hover {
   text-decoration: underline;
 }
-
-
