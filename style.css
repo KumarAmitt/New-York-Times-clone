@@ -10,9 +10,104 @@
   box-sizing: inherit;
 }
 
+body{
+  max-width: 100vw;
+}
+
 body * + * {
   margin-top: 1.5em;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+ul > li + li {
+  margin-top: 0;
+}
 /* CSS for Header */
+
+.header {
+  /* border: 5px solid red; */
+  padding: .2em .5em;
+  border-bottom: 1px solid gray;
+}
+
+.header-container {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container > li {
+  /* border: 2px solid red; */
+}
+
+
+.header-container > .left > ul {
+  /* border: 1px solid green; */
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left > ul > li {
+  padding: .5em .8em;
+}
+
+.left > ul > li button {
+  border: none;
+  background-color: transparent;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.article-title > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .9rem;
+  color: #000;
+}
+
+.article-title > a:hover {
+  text-decoration: underline;
+}
+
+.left > ul > li > a{
+  display: block;
+}
+
+
+.header-container > .right > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0.2em;
+  margin: 0;
+}
+
+.header-container > .right > ul li a {
+  display: block;
+  background-color: royalblue;
+  color: #fff;
+  padding: .5em 1em;
+  margin: 0 .5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: .2em;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.header-container > .right > ul li a:hover {
+  background-color: red;
+}
+
 
