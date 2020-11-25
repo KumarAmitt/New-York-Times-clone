@@ -116,6 +116,11 @@ p > span {
   text-decoration: underline;
 }
 
+.article-footer > small a:hover {
+  text-decoration: none;
+}
+
+
 .right > ul li a:hover {
   background-color: rgb(50, 50, 163);
 }
@@ -282,10 +287,6 @@ iframe .video {
 
 .article-footer > small > span + span {
   border-left: 1.5px solid gray;
-}
-
-.article-footer > small a:hover {
-  text-decoration: none;
 }
 
 .comment-section > ul {
