@@ -94,6 +94,11 @@ p > span {
   margin: 0 0.5em;
 }
 
+.article-footer > small a {
+  padding: 0 0.4em;
+  color: #000;
+}
+
 .right > ul li a {
   display: block;
   background-color: royalblue;
@@ -105,11 +110,6 @@ p > span {
   border-radius: 0.2em;
   font-size: 0.8rem;
   font-weight: 700;
-}
-
-.article-footer > small a {
-  padding: 0 0.4em;
-  color: #000;
 }
 
 .article-title > a:hover {
