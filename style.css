@@ -69,6 +69,15 @@ p > span {
   margin: 0;
 }
 
+.article-title > a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #000;
+}
+
 .right > ul li a {
   display: block;
   background-color: royalblue;
@@ -82,23 +91,22 @@ p > span {
   font-weight: 700;
 }
 
-.right > ul li a:hover {
-  background-color: rgb(50, 50, 163);
+.advt-top a {
+  color: aqua;
 }
 
-.article-title > a {
+.social-links > li > a {
   display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: #000;
+  margin: 0 0.5em;
 }
 
 .article-title > a:hover {
   text-decoration: underline;
 }
 
+.right > ul li a:hover {
+  background-color: rgb(50, 50, 163);
+}
 
 /* CSS for MAIN section of the page */
 
@@ -167,10 +175,6 @@ time {
   padding: 0;
 }
 
-.social-links > li > a {
-  display: block;
-  margin: 0 0.5em;
-}
 
 /* CSS for advt class */
 
@@ -186,10 +190,6 @@ time {
   max-width: 280px;
   margin: 0 auto;
   text-align: center;
-}
-
-.advt-top a {
-  color: aqua;
 }
 
 .main-content > h2 {
@@ -316,47 +316,45 @@ iframe .video {
   margin: 1em;
 }
 
-.master-footer > .footer-title {
-  /* border: 2px solid green; */
+.master-footer .footer-title {
   display: flex;
   justify-content: space-between;
   margin-top: 0.5em;
-  /* margin: .5em 1em ; */
 }
 
-.master-footer > .footer-title small {
+.master-footer .footer-title small {
   margin-top: 0;
 }
 
-.master-footer > .middle-section {
+.master-footer  .middle-section {
   display: flex;
   flex-flow: row nowrap;
   font-size: 0.9rem;
   justify-content: space-between;
 }
 
-.master-footer > .middle-section ul {
+.master-footer .middle-section ul {
   /* border: 1px solid blue; */
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.master-footer > .middle-section > ul > li > a {
+.master-footer .middle-section ul li a {
   color: #000;
   text-decoration: none;
   line-height: 1.6;
 }
 
-.master-footer > .middle-section > ul > li > a:not(.section-title):hover {
+.master-footer .middle-section ul li a:not(.section-title):hover {
   text-decoration: underline;
 }
 
-.master-footer > .middle-section .section-title {
+.master-footer .middle-section .section-title {
   font-weight: 700;
 }
 
-.master-footer .bottom-section > ul {
+.master-footer .bottom-section ul {
   /* border: 2px solid green; */
   display: flex;
   list-style-type: none;
@@ -366,12 +364,12 @@ iframe .video {
   justify-content: center;
 }
 
-.master-footer .bottom-section > ul a {
+.master-footer .bottom-section ul a {
   color: gray;
   padding: 0 .5em;
   text-decoration: none;
 }
 
-.master-footer .bottom-section > ul a:hover {
+.master-footer .bottom-section ul a:hover {
   text-decoration: underline;
 }
