@@ -100,6 +100,12 @@ p > span {
   font-weight: 700;
 }
 
+.master-footer-middle-column a {
+  color: #000;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
 .social-links > li > a {
   display: block;
   margin: 0 0.5em;
@@ -340,12 +346,6 @@ iframe .video {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.master-footer-middle-column a {
-  color: #000;
-  text-decoration: none;
-  line-height: 1.6;
 }
 
 .master-footer-middle-column a:not(.section-title):hover {
