@@ -10,10 +10,6 @@
   box-sizing: inherit;
 }
 
-body{
-  max-width: 100vw;
-}
-
 body * + * {
   margin-top: 1.5em;
 }
@@ -32,6 +28,7 @@ ul > li + li {
 p > span {
   text-transform: uppercase;
 }
+
 /* CSS for Header */
 
 .header {
@@ -146,7 +143,7 @@ p > span {
   margin-top: .5em;
 }
 
-.cover-image-caption > credit {
+.cover-image-caption > span {
   color: gray;
   font-size: .8rem;
 }
@@ -285,7 +282,7 @@ iframe .video {
   font-size: .9rem;
 }
 
-.secondary-image-caption > credit {
+.secondary-image-caption > span {
   color: gray;
   font-size: .8rem;
 }
