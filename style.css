@@ -116,6 +116,13 @@ p > span {
   color: #000;
 }
 
+
+.master-footer-bottom ul a {
+  color: gray;
+  padding: 0 0.5em;
+  text-decoration: none;
+}
+
 .right > ul li a {
   display: block;
   background-color: royalblue;
@@ -135,6 +142,10 @@ p > span {
 
 .article-footer > small a:hover {
   text-decoration: none;
+}
+
+.master-footer-bottom ul a:hover {
+  text-decoration: underline;
 }
 
 
@@ -364,14 +375,4 @@ iframe .video {
   font-size: 0.8rem;
   margin: 0 auto;
   justify-content: center;
-}
-
-.master-footer-bottom ul a {
-  color: gray;
-  padding: 0 0.5em;
-  text-decoration: none;
-}
-
-.master-footer-bottom ul a:hover {
-  text-decoration: underline;
 }
