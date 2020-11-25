@@ -28,6 +28,10 @@ body {
 ul > li + li {
   margin-top: 0;
 }
+
+p > span {
+  text-transform: uppercase;
+}
 /* CSS for Header */
 
 .header {
@@ -108,6 +112,285 @@ ul > li + li {
 
 .header-container > .right > ul li a:hover {
   background-color: red;
+}
+
+/* CSS for MAIN section of the page */
+
+.main {
+  max-width: 1080px;
+  margin: 4em auto 0;
+}
+
+.topic{
+  color: red;
+  text-transform: capitalize;
+  font-size: 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* CSS for cover image */
+
+.main > figure {
+  background-color: yellow;
+}
+
+.cover-image {
+  display: block;
+  max-width: 100%;
+}
+
+.cover-image-caption{
+  font-size: .9rem;
+  max-width: 70%;
+  margin-top: .5em;
+}
+
+.cover-image-caption > credit {
+  color: red;
+  font-size: .8rem;
+}
+
+/* CSS for ARTICLE section */
+
+.article {
+  /* margin: 2em auto 0;
+  max-width: 640px; */
+  font-size: 1.2rem;
+}
+
+.author {
+  font-size: 1rem;
+}
+
+.article-header, .main-content {
+  margin: 2em auto 0;
+  max-width: 640px;
+}
+
+.main-content > h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.article-header > .sub-info {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links {
+  /* border: 2px solid red; */
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  /* border: 2px solid green; */
+}
+
+.social-links > li > a {
+  display: block;
+  margin: 0 .5em;
+}
+
+time {
+  /* border: 2px solid red; */
+  font-size: .8rem;
+}
+
+/* CSS for advt class */
+
+.advt-top {
+  border-top: .5px solid gray;
+  border-bottom: .5px solid gray;
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advt p {
+  font-size: .9rem;
+  font-weight: 700;
+  margin: .5em auto;
+}
+
+.advt-top a {
+  color: aqua;
+}
+
+/* CSS for Inflaction Image */
+
+.inflaction-image {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.inflaction-image-caption {
+  font-size: .9rem;
+}
+
+/* CSS for bottom-advt */
+
+.advt-bottom {
+  border-top: .5px solid gray;
+  display: flex;
+  width: 640px;
+  justify-content: space-between;
+}
+
+.advt-bottom p {
+  max-width: 80%;
+  margin-left: 0;
+  font-weight: 400;
+}
+
+.advt-bottom p span{
+  font-weight: 700;
+}
+
+.advt-bottom .button-container {
+  margin-top: .5em;
+}
+
+.advt-bottom button {
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: .5em 1em;
+  font-weight: 700;
+}
+.advt-bottom button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+iframe .video {
+  margin: 0 auto;
+}
+
+
+/* CSS for Secondary Image  */
+
+.secondary-image {
+  display: block;
+  max-width: 100%;
+}
+
+.secondary-image-caption {
+  font-size: .9rem;
+}
+
+.secondary-image-caption > credit {
+  color: red;
+  font-size: .8rem;
+}
+
+/* CSS for article-footer */
+
+.article-footer {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.article-footer > small{
+  font-size: .8rem;
+}
+
+.article-footer > small a {
+  padding: 0 .4em;
+  color: #000;
+}
+
+.article-footer > small a:hover {
+  text-decoration: none;
+}
+
+.article-footer > small > span + span {
+  border-left: 1.5px solid gray;
+}
+
+.comment-section > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.comment-section .social-links {
+  display: flex;
+  list-style-type: none;
+}
+
+/* CSS for page footer */
+
+.master-footer {
+  border: 2px solid red;
+  margin: 1em;
+}
+
+.master-footer > .footer-title {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5em;
+  /* margin: .5em 1em ; */
+}
+
+.master-footer > .footer-title small {
+  margin-top: 0;
+}
+
+.master-footer > .middle-section {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: .9rem;
+  justify-content: space-between;
+}
+
+.master-footer > .middle-section ul {
+  border: 1px solid blue;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.master-footer > .middle-section .section-title {
+  font-weight: 700;
+}
+
+.master-footer > .middle-section > ul > li > a {
+  color: #000;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.master-footer > .middle-section > ul > li > a:not(.section-title):hover {
+  text-decoration: underline;
+}
+
+.master-footer .bottom-section > ul {
+  border: 2px solid green;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  font-size: .8rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.master-footer .bottom-section > ul a {
+  color: gray;
+  padding: 0 .5em;
+  text-decoration: none;
+}
+
+.master-footer .bottom-section > ul a:hover {
+  text-decoration: underline;
 }
 
 
