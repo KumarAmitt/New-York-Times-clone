@@ -111,7 +111,7 @@ p > span {
 }
 
 .header-container > .right > ul li a:hover {
-  background-color: red;
+  background-color:rgb(50, 50, 163);
 }
 
 /* CSS for MAIN section of the page */
@@ -122,7 +122,7 @@ p > span {
 }
 
 .topic{
-  color: red;
+  color: #000;
   text-transform: capitalize;
   font-size: 2rem;
   max-width: 640px;
@@ -131,9 +131,9 @@ p > span {
 
 /* CSS for cover image */
 
-.main > figure {
+/* .main > figure {
   background-color: yellow;
-}
+} */
 
 .cover-image {
   display: block;
@@ -147,7 +147,7 @@ p > span {
 }
 
 .cover-image-caption > credit {
-  color: red;
+  color: gray;
   font-size: .8rem;
 }
 
@@ -286,7 +286,7 @@ iframe .video {
 }
 
 .secondary-image-caption > credit {
-  color: red;
+  color: gray;
   font-size: .8rem;
 }
 
@@ -321,6 +321,17 @@ iframe .video {
   padding: 0;
 }
 
+.comment-section .read-button a {
+  background-color: blue;
+  color: #fff;
+  padding: .8em 5em;
+  border-radius: .2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
 .comment-section .social-links {
   display: flex;
   list-style-type: none;
@@ -329,12 +340,12 @@ iframe .video {
 /* CSS for page footer */
 
 .master-footer {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 1em;
 }
 
 .master-footer > .footer-title {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   justify-content: space-between;
   margin-top: .5em;
@@ -353,7 +364,7 @@ iframe .video {
 }
 
 .master-footer > .middle-section ul {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -374,7 +385,7 @@ iframe .video {
 }
 
 .master-footer .bottom-section > ul {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   list-style-type: none;
   padding: 0;
