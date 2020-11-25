@@ -107,6 +107,11 @@ p > span {
   font-weight: 700;
 }
 
+.article-footer > small a {
+  padding: 0 0.4em;
+  color: #000;
+}
+
 .article-title > a:hover {
   text-decoration: underline;
 }
@@ -235,6 +240,10 @@ time {
   font-size: 0.9rem;
 }
 
+.secondary-image-caption > span {
+  color: gray;
+  font-size: 0.8rem;
+}
 
 .advt-bottom p span {
   font-weight: 700;
@@ -260,11 +269,6 @@ iframe .video {
   max-width: 100%;
 }
 
-.secondary-image-caption > span {
-  color: gray;
-  font-size: 0.8rem;
-}
-
 /* CSS for article-footer */
 
 .article-footer {
@@ -278,11 +282,6 @@ iframe .video {
 
 .article-footer > small > span + span {
   border-left: 1.5px solid gray;
-}
-
-.article-footer > small a {
-  padding: 0 0.4em;
-  color: #000;
 }
 
 .article-footer > small a:hover {
