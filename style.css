@@ -89,6 +89,17 @@ p > span {
   color: aqua;
 }
 
+.read-button a {
+  background-color: blue;
+  color: #fff;
+  padding: 0.8em 5em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .social-links > li > a {
   display: block;
   margin: 0 0.5em;
@@ -294,17 +305,6 @@ iframe .video {
   list-style-type: none;
   justify-content: space-between;
   padding: 0;
-}
-
-.read-button a {
-  background-color: blue;
-  color: #fff;
-  padding: 0.8em 5em;
-  border-radius: 0.2em;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 700;
 }
 
 .comment-section .social-links {
