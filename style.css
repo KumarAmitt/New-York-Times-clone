@@ -139,6 +139,11 @@ p > span {
   text-decoration: none;
 }
 
+.master-footer-title small a {
+  color: var(--link-text-color);
+  text-decoration: none;
+}
+
 .right > ul li a {
   display: block;
   background-color: var(--button-bg-color);
@@ -434,15 +439,6 @@ time,
 
 
 
-
-
-
-
-
-
-
-
-
 /* CSS for page master footer */
 
 .master-footer {
@@ -461,10 +457,6 @@ time,
   margin-top: 0;
 }
 
-.master-footer-title small a {
-  color: var(--link-text-color);
-  text-decoration: none;
-}
 
 .master-footer-middle {
   display: flex;
