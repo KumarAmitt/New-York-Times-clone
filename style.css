@@ -107,6 +107,7 @@ p > span {
   font-weight: 700;
   font-size: 0.9rem;
   color: #000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .advt-top a {
@@ -250,7 +251,6 @@ p > span {
   margin: 0 auto;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* CSS for cover image */
