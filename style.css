@@ -292,6 +292,7 @@ time,
 .inflaction-container h2 {
   font-size: 1.2rem;
 }
+
 .inflaction-grid {
   display: grid;
   background-image: url("assets/images/inflaction.png");
@@ -319,8 +320,9 @@ time,
 }
 
 .inflaction-container-caption {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
+
 /* CSS for bottom-advt */
 
 .advt-bottom {
@@ -475,7 +477,7 @@ time,
   color: var(--text-color-dark);
 }
 
-.popular p:hover{
+.popular p:hover {
   color: var(--text-color-light);
   cursor: pointer;
 }
