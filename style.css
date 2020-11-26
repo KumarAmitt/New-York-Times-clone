@@ -172,6 +172,13 @@ p > span {
   text-decoration: none;
 }
 
+.fixed-footer p a {
+  color: var(--text-color-dark);
+  text-decoration: none;
+  padding: 1.em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .right > ul li a {
   display: block;
   background-color: var(--button-bg-color);
@@ -467,6 +474,10 @@ time,
   display: flex;
 }
 
+.box {
+  padding: 0 0.5em;
+}
+
 .newsletter-content > .box {
   flex: 1;
   border: 1px solid var(--text-color-light);
@@ -496,10 +507,6 @@ time,
   font-size: 0.8rem;
   color: var(--text-color-light);
   text-align: right;
-}
-
-.box {
-  padding: 0 0.5em;
 }
 
 .box h3 {
@@ -548,6 +555,11 @@ time,
   border-top: 0.5px solid var(--icons-bg-color);
   padding-top: 1em;
   color: var(--text-color-dark);
+}
+
+.fixed-footer p {
+  float: left;
+  margin-left: 400px;
 }
 
 .popular p:hover {
@@ -643,18 +655,6 @@ time,
   bottom: 0;
   background-color: #fff;
   cursor: pointer;
-}
-
-.fixed-footer p {
-  float: left;
-  margin-left: 400px;
-}
-
-.fixed-footer p a {
-  color: var(--text-color-dark);
-  text-decoration: none;
-  padding: 1.em;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .fixed-footer button {
