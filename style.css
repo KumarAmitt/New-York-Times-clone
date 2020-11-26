@@ -2,7 +2,7 @@
 
 :root {
   box-sizing: border-box;
-  --button-bg-color: #567B95;
+  --button-bg-color: #567b95;
   --button-bg-hover-color: #3b5568;
   --link-text-color: #246a9c;
   --icons-bg-color: #eee;
@@ -170,11 +170,9 @@ p > span {
   background-color: #fff;
 }
 
-
 .article-footer > small a:hover {
   text-decoration: none;
 }
-
 
 .master-footer-bottom ul a:hover {
   text-decoration: underline;
@@ -372,7 +370,6 @@ time,
   list-style-type: none;
 }
 
-
 /* ---------------Sponsor section------------- */
 
 .sponsors {
@@ -395,9 +392,9 @@ time,
 
 .newsletter > h2,
 .spaces > h2,
-.popular> h2 {
-   font-size: 1rem;
-   font-weight: 700;
+.popular > h2 {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .newsletter-content {
@@ -420,7 +417,7 @@ time,
 
 .astronomy {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
 }
 
@@ -436,8 +433,6 @@ time,
   border-top: 1px solid #000;
   margin-top: 0;
 }
-
-
 
 /* CSS for page master footer */
 
@@ -456,7 +451,6 @@ time,
 .master-footer-title small {
   margin-top: 0;
 }
-
 
 .master-footer-middle {
   display: flex;
@@ -482,7 +476,7 @@ time,
 
 /* subscribe-column */
 .subscribe-column {
-  border-left: .5px solid rgb(194, 187, 187);
+  border-left: 0.5px solid rgb(194, 187, 187);
   padding-left: 1.5em;
   padding-right: 2.5em;
 }
@@ -493,7 +487,7 @@ time,
 }
 
 .smaller {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .seperator {
@@ -504,7 +498,7 @@ time,
 }
 
 .master-footer-bottom {
-  border-top: .5px solid rgb(194, 187, 187);
+  border-top: 0.5px solid rgb(194, 187, 187);
   padding-top: 0.5em;
   padding-bottom: 1.5em;
 }
