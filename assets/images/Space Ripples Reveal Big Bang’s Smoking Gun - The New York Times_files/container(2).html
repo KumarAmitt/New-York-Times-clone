@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html class="mti-inactive"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>SafeFrame Container</title>
+    <script type="text/javascript" async="" src="./UFYwWwmt.js"></script><script>
+(function(){var n=this||self;var w={};var y=function(a){y[" "](a);return a};y[" "]=function(){};var B=null,G=function(a){var b=a.length,c=3*b/4;c%3?c=Math.floor(c):-1!="=.".indexOf(a[b-1])&&(c=-1!="=.".indexOf(a[b-2])?c-2:c-1);var d=new Uint8Array(c),f=0;C(a,function(g){d[f++]=g});return d.subarray(0,f)},C=function(a,b){function c(q){for(;d<a.length;){var e=a.charAt(d++),k=B[e];if(null!=k)return k;if(!/^[\s\xa0]*$/.test(e))throw Error("Unknown base64 encoding at char: "+e);}return q}H();for(var d=0;;){var f=c(-1),g=c(0),h=c(64),p=c(64);if(64===p&&-1===f)break;b(f<<2|g>>4);64!=h&&(b(g<<4&240|h>>2),64!=p&&b(h<<6&192|p))}},H=function(){if(!B){B={};for(var a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),b=["+/=","+/","-_=","-_.","-_"],c=0;5>c;c++)for(var d=a.concat(b[c].split("")),f=0;f<d.length;f++){var g=d[f];void 0===B[g]&&(B[g]=f)}}};var I=function(a,b){if(a)for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(void 0,a[c],c,a)};var J=function(a,b){var c=void 0===c?{}:c;this.error=a;this.context=b.context;this.msg=b.message||"";this.id=b.id||"jserror";this.meta=c};var K=/^https?:\/\/(\w|-)+\.cdn\.ampproject\.(net|org)(\?|\/|$)/,L=function(a,b){this.a=a;this.b=b},M=function(a,b){this.url=a;this.g=!!b;this.depth=null};var N=function(a){n.google_image_requests||(n.google_image_requests=[]);var b=n.document.createElement("img");b.src=a;n.google_image_requests.push(b)};var O=function(){this.c="&";this.f=!1;this.b={};this.i=0;this.a=[]},Q=function(a,b){var c={};c[a]=b;return[c]},S=function(a,b,c,d,f){var g=[];I(a,function(h,p){(h=R(h,b,c,d,f))&&g.push(p+"="+h)});return g.join(b)},R=function(a,b,c,d,f){if(null==a)return"";b=b||"&";c=c||",$";"string"==typeof c&&(c=c.split(""));if(a instanceof Array){if(d=d||0,d<c.length){for(var g=[],h=0;h<a.length;h++)g.push(R(a[h],b,c,d+1,f));return g.join(c[d])}}else if("object"==typeof a)return f=f||0,2>f?encodeURIComponent(S(a,b,c,d,f+1)):"...";return encodeURIComponent(String(a))},T=function(a,b,c,d){a.a.push(b);a.b[b]=Q(c,d)},V=function(a){var b="https://pagead2.googlesyndication.com/pagead/gen_204?id=jserror&",c=U(a)-27;if(0>c)return"";a.a.sort(function(k,m){return k-m});for(var d=null,f="",g=0;g<a.a.length;g++)for(var h=a.a[g],p=a.b[h],q=0;q<p.length;q++){if(!c){d=null==d?h:d;break}var e=S(p[q],a.c,",$");if(e){e=f+e;if(c>=e.length){c-=e.length;b+=e;f=a.c;break}a.f&&(f=c,e[f-1]==a.c&&--f,b+=e.substr(0,f),f=a.c,c=0);d=null==d?h:d}}a="";null!=d&&(a=f+"trn="+d);return b+a+""},U=function(a){var b=1,c;for(c in a.b)b=c.length>b?c.length:b;return 3997-b-a.c.length-1};var W=function(a){if(.01>Math.random())try{if(a instanceof O)var b=a;else b=new O,I(a,function(d,f){var g=b,h=g.i++;d=Q(f,d);g.a.push(h);g.b[h]=d});var c=V(b);c&&N(c)}catch(d){}};var X=function(a){var b=a.toString();a.name&&-1==b.indexOf(a.name)&&(b+=": "+a.name);a.message&&-1==b.indexOf(a.message)&&(b+=": "+a.message);if(a.stack){a=a.stack;var c=b;try{-1==a.indexOf(c)&&(a=c+"\n"+a);for(var d;a!=d;)d=a,a=a.replace(/((https?:\/..*\/)[^\/:]*:\d+(?:.|\n)*)\2/,"$1");b=a.replace(/\n */g,"\n")}catch(f){b=c}}return b};var Y=function(a){if(!a)return a;var b=a.toLowerCase();return-1<b.indexOf("<!doctype")||-1<b.indexOf("<html")?a:"<html><head></head><body>"+a+"</body></html>"},Z=function(a){var b=/<startguard>(.*)<endguard>/g.exec(a);return b&&b[1]?b[1]:a};var aa=new function(){this.a=w===w&&"https://ff.doubleclick.net"||""};var ba=/^([^;]+);(\d+);([\s\S]*)$/,ca=function(){var a=window.name,b=ba.exec(a);if(null===b)throw Error("Cannot parse serialized data. "+a.substring(0,50));a=+b[2];var c=b[3];if(a>c.length)throw Error("Parsed content size doesn't match. "+a+":"+c.length);return{j:b[1],content:c.substr(0,a),h:c.substr(a)}};var da=/(<head(\s+[^>]*)?>)/i;(function(a){if(window.name){var b=function(e){try{var k=new O;k.f=!0;T(k,1,"context",507);e.error&&e.meta&&e.id||(e=new J(e,{message:X(e)}));e.msg&&T(k,2,"msg",e.msg.substring(0,512));var m=[e.meta||{}];k.a.push(3);k.b[3]=m;e=n;m=[];var D=null;do{var l=e;try{var z;if(z=!!l&&null!=l.location.href)b:{try{y(l.foo);z=!0;break b}catch(A){}z=!1}var P=z}catch(A){P=!1}if(P){var t=l.location.href;D=l.document&&l.document.referrer||null}else t=D,D=null;m.push(new M(t||""));try{e=l.parent}catch(A){e=null}}while(e&&l!=e);t=0;for(var u=m.length-1;t<=u;++t)m[t].depth=u-t;l=n;if(l.location&&l.location.ancestorOrigins&&l.location.ancestorOrigins.length==m.length-1)for(u=1;u<m.length;++u){var v=m[u];v.url||(v.url=l.location.ancestorOrigins[u-1]||"",v.g=!0)}var E=new M(n.location.href,!1);l=null;var F=m.length-1;for(v=F;0<=v;--v){var r=m[v];!l&&K.test(r.url)&&(l=r);if(r.url&&!r.g){E=r;break}}r=null;var ea=m.length&&m[F].url;0!=E.depth&&ea&&(r=m[F]);var x=new L(E,r);x.b&&T(k,4,"top",x.b.url||"");T(k,5,"url",x.a.url||"");W(k)}catch(A){try{W({context:"ecmserr",rctx:507,msg:X(A),url:x&&x.a.url})}catch(fa){}}};try{var c=ca(),d=JSON.parse(c.h),f=function(e){d.goog_safeframe_hlt&&(n.goog_safeframe_hlt=d.goog_safeframe_hlt);d._context&&(n.AMP_CONTEXT_DATA=d._context);n.sf_={v:c.j,cfg:d};var k=window.document;k.open("text/html","replace");k.write(e);k.close();n.sf_&&(window.name="")},g=void 0===d.encryptionMode?null:d.encryptionMode,h=d.secureFetchFrame,p=d.uid;if(h){var q=new MessageChannel;q.port1.onmessage=function(e){e=Y(e.data).replace(da,'$1<script>window.addEventListener("load", function() {window.parent.postMessage("sf-load:'+(p+'", "*");});\x3c/script>'));a(e,g,f,b);q.port1.close()};window.parent.frames[h].postMessage("sf-ready:"+p,aa.a,[q.port2])}else window.name="",a(c.content,g,f,b)}catch(e){b(e)}}})(function(a,b,c){2===b&&(a=Y((new TextDecoder).decode(G(Z(a)))));c(a)});}).call(this);
+    </script><meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><script>var jscVersion = 'r20201112';</script><script>var google_casm=[];</script><script>(function(){(function(){function c(a){this.t={};this.tick=function(a,b,c){this.t[a]=[void 0!=c?c:(new Date).getTime(),b]};this.tick("start",null,a)}var a,b;window.performance&&(b=(a=window.performance.timing)&&a.responseStart);var d=0<b?new c(b):new c;window.jstiming={Timer:c,load:d};a&&(a=a.navigationStart,0<a&&b>=a&&(window.jstiming.srt=b-a))})();}).call(this);</script><style> @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap');
+
+@font-face {
+ font-family: "";
+ src: url() format("");
+}
+
+@font-face {
+ font-family: "";
+ src: url() format("");
+}
+
+
+p {
+  margin: 0;
+}
+
+
+
+.impression-tracker {
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.ad-link {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1605px;
+  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.flex-frame {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  background-size: cover;
+  background-position: right;
+  border: 1px solid #cccccc;
+  background-color: #000;
+  color: #fff;
+  
+    /* border issue fix by tanvir - added on 10.8.2019 */
+  box-sizing: border-box;
+}
+
+<!--Remove Context bullet CSS
+
+.context-bullet {
+  color: black;
+  width: 100%;
+  padding-left: 10px;
+  display: table;
+  height: 30px;
+}
+
+.context-bullet-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  display: table-cell;
+}
+
+.context-bullet-content span {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+-->
+
+.content-container {
+  display: none;
+  position: relative;
+  float: left;
+  pointer-events: all;
+  z-index: 3;
+  width: calc(40% - 10px);
+  height: 100%;
+  background: url('https://tpc.googlesyndication.com/simgad/3858083229831397950?');
+  background-size: cover;
+  background-position: center;
+}
+
+.media-container {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.media-content {
+  position: absolute;
+  z-index: 3;
+  left: 10px;
+  bottom: 10px;
+}
+
+.video-content {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  z-index: 9999;
+}
+
+
+.img-container {
+  display: none;
+  width: calc(100% - 1005px);
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+}
+
+/*
+.video-cover {
+  pointer-events: none;
+  background-size: cover;
+  background-position: top center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+}
+
+*/
+
+.media-container .logo {
+  align-self: center;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+
+.content-container .logo {
+  margin-bottom: 81px;
+  position:absolute;
+  top:1px;
+  margin-left:25px;
+  margin-top:25px;
+}
+
+.logo img {
+  display: block;
+  text-align: left;
+  max-width: 135px;
+  max-height: 50px;
+}
+
+.logo .logo-hi-res {
+  display: none;
+}
+
+.tablet-action-item {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  height: 42px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.tablet-action-item-logo {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+
+
+.content-well {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.content-middle-well {
+  align-self: flex-end;
+  margin-right: auto;
+  margin-left: 25px;
+}
+
+.title {
+  font-size: 27px;
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 485px;
+  margin-bottom: 1px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.media-container .title {
+  margin-bottom: 1px;
+  /*height: 42px;
+  line-height: 42px;*/
+}
+
+.summary {
+  font-size: 18px;
+  max-width: 280px;
+  letter-spacing: -0.01em;
+}
+
+.content-container .summary {
+  margin-bottom: 0px;
+}
+
+.cta {
+  pointer-events: all;
+  flex: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top:9px;
+  letter-spacing:1px;
+}
+
+.media-container .cta {
+  align-self: center;
+  margin-bottom: 0;
+}
+
+a:link, a:visited, a:focus {
+  color: #fff;
+  text-decoration: none;
+  min-height: 1px;
+}
+
+/*
+.js-canvas {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+}
+*/
+
+.gradient {
+  position: absolute;
+  left: 0;
+    background-image:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,0.6), rgba(255,255,255,0) 60%
+    );
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#vid-tracker {
+  display:none;
+}
+
+
+/* Styles for video player controls*/
+
+/*
+.player-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+
+.media-container:hover .player {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+*/
+
+/*css for mobile player*/
+
+/*
+.player {
+  flex: none;
+  position: absolute;
+  z-index: 3;
+  
+  pointer-events: all;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, .5);
+  cursor: pointer;
+  left:50%;
+  top:40%;
+}
+
+.player::selection {
+  background-color: transparent;
+}
+
+.player__controller {
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;x
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.player__controller-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+}
+
+.player__controller-icon::before,
+.player__controller-icon::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#player__state {
+  width: 0;
+  height: 0;
+  border: none;
+  visibility: hidden;
+}
+
+.player__controller-icon::before {
+  content: "";
+  left: 0;
+  transition: all 0.2s linear;
+  width: 0;
+  height: 8px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 8px solid white;
+}
+.player__controller-icon::after {
+  content: "";
+  right: 0;
+  transition: all 0.3s;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 8px solid white;
+}
+#player__state:checked + .player__controller .player__controller-icon::before {
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 5.3px;
+  height: 100%;
+}
+#player__state:checked + .player__controller .player__controller-icon::after {
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 5.3px;
+  height: 100%;
+}
+
+*/
+
+/*CSS for controles on tablet in-app*/
+
+
+
+/* Breakpoints */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo .logo-hi-res {
+    display: block;
+  }
+  .logo .logo-std {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .content-container {
+    display: flex;
+    width: calc(100% - 490px);
+  }
+/*css for desktop player*/
+
+
+ /* .player {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  */
+
+  .media-container {
+    width: 480px;
+  }
+
+  .media-container .logo {
+    display: none;
+    padding-top:10px;
+    padding-left:10px;
+  }
+
+  .media-container .cta {
+    display: none;
+  }
+
+  .media-content {
+    display: none;
+  }
+
+ .video-content {
+    margin: 0px;
+  }
+
+/*
+  .js-canvas {
+    margin: 0px;
+  }
+  
+  */
+}
+
+
+
+
+@media screen and (min-width: 1250px) {
+  .content-container {
+    width: 525px;
+  }
+
+  .img-container {
+    display: block;
+  }
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+.cta{
+   color:#fff;
+}
+ 
+.title {
+  color:#fff; 
+
+}
+
+.summary{
+color:#fff;
+
+ }
+ 
+}   
+
+
+@media screen and (max-width: 728px) {
+
+.title {
+  font-size:23px;
+  line-height: 22px;
+  
+}
+
+.summary {
+  font-size:16px;
+  line-height: 18px;
+  
+}
+
+.content-container .logo {
+margin-bottom: 93px;
+position:absolute; 
+top:1px;
+margin-left: 25px; 
+margin-top:25px
+}  
+
+}
+
+.disclaimer {
+  display:none;
+}
+
+@media screen (max-width:840px) and (min-width:785px) {
+   .content-container .logo {
+       margin-bottom: 90px;
+
+	}  
+
+}
+
+
+@media screen and (max-width: 727px) {
+  #container {
+    display: none;
+  }
+}
+
+/* -------- tanvir's edit ------------ */
+
+@media (max-width: 974px) {
+
+	.video-content {
+    	width: 480px;
+        height: 270px;
+    }
+
+	.ad-video {
+        width: 480px;
+        height: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        right: 0px;
+        position: absolute;
+    }
+    
+    .ad-video div {
+    	position: absolute;
+        width: 480px;
+        height: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0px;
+        right: 0px;
+    }
+    
+	video {
+        height: 270px !important;
+        width: 480px;
+    }
+  }
+
+/* ---- end of tanvir's edit ---------- */
+
+
+#container .cta {
+	display: none;
+}
+
+@media screen and (max-width: 956px) {
+	body {
+    display: none;
+  }
+</style><style type="text/css" id="mti_fontface_4221a460-4ed2-4039-a07f-d1f4a2739cad">@font-face{
+font-family:"Proxima N W01 Reg";
+src:url("https://fast.fonts.net/dv2/14/64017d81-9430-4cba-8219-8f5cc28b923e.woff2?d44f19a684109620e484147faf90e818e91fbfe6a113aa2749f26bfa29c567201013b729c4701c6018a692b15a42ad2f5ccab08c40c012f3f760269f734724b070bc4b6d&projectId=4221a460-4ed2-4039-a07f-d1f4a2739cad") format('woff2');}
+@font-face{
+font-family:"Proxima N W01 Smbd";
+src:url("https://fast.fonts.net/dv2/14/ae47a7f5-89da-4879-b934-29722c3dd451.woff2?d44f19a684109620e484147faf90e818e91fbfe6a113aa2749f26bfa29c567201013b729c4701c6018a692b15a42ad2f5ccab08c40c012f3f760269f734724b070bc4b6d&projectId=4221a460-4ed2-4039-a07f-d1f4a2739cad") format('woff2');}
+@font-face{
+font-family:"Proxima N W01 Bold";
+src:url("https://fast.fonts.net/dv2/14/0d416408-95c6-4ad7-b08d-e60573d3b37d.woff2?d44f19a684109620e484147faf90e818e91fbfe6a113aa2749f26bfa29c567201013b729c4701c6018a692b15a42ad2f5ccab08c40c012f3f760269f734724b070bc4b6d&projectId=4221a460-4ed2-4039-a07f-d1f4a2739cad") format('woff2');}
+</style><script type="text/javascript" src="./mt.js"></script><link id="MonoTypeFontApiFontTracker" type="text/css" rel="stylesheet" href="./1.css"></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><div class="GoogleActiveViewInnerContainer" style="left:0px;top:0px;width:100%;height:100%;position:fixed;pointer-events:none;z-index:-9999;"></div><script src="./ext.js"></script><link href="./css" rel="stylesheet" type="text/css"><div><!--VERSION2[Marketing] DFP Quartiles Flex Frame: Video 16:9 (Three Column)(Desktop) (Figma update version) -->
+
+
+<script type="text/javascript" src="./mraid.js"></script>
+<script type="text/javascript" src="./4221a460-4ed2-4039-a07f-d1f4a2739cad.js"></script>
+
+
+<div id="container" class="container">
+ 	<div class="flex-frame">
+
+    <div id="media-container" class="media-container">
+      <div class="media-content" style="display: none;">
+      </div>
+       <div class="video video-content">
+      <script class="lima-exp-data" type="application/json">{"experimentIds": "44714510,44729911,44730425,44730426,75259405","binaryIdentifier": "dfp_native_video","adEventId": "CKyPrfLCn-0CFW2DrAIdFmMDtg"}</script><div class="ad-video" id="google-native-video" style="width: 480px; height: 270px; position: relative; margin: auto;"><div style="position: absolute;"><video id="google-native-video-media" width="480" height="270" src="https://redirector.gvt1.com/videoplayback/id/78f01fc5c5ecd754/itag/43/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fwebm/ctier/L/ip/0.0.0.0/ipbits/0/expire/1606391685/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime,ctier/signature/2CA8F6276BB98273E3D1C994289EB10585AC1CBE.492E8E13E5EFCC790F476350911FB780A385791B/key/ck2/file/file.webm" preload="auto"></video></div><img src="./volume_off.png" style="position: absolute; z-index: 10; bottom: 15px; left: 48px; width: 18px; height: 18px; display: block; background: rgba(0, 0, 0, 0.5); border: 1px solid white; padding: 2px; border-radius: 50%;"><img src="./play.png" style="position: absolute; z-index: 10; bottom: 15px; right: 8px; width: 18px; height: 18px; display: block; left: 16px; background: rgba(0, 0, 0, 0.5); border: 1px solid white; padding: 2px; border-radius: 50%;"><img src="./play.svg" style="position: absolute; z-index: 12; top: 40%; left: 44%; width: 40px; height: 40px; display: none;"></div><script type="text/javascript" src="./web_video.js"></script><script>var webVideo = new GoogleWebVideo(document.getElementById('google-native-video'),"\x3c?xml version\x3d\x221.0\x22 encoding\x3d\x22UTF-8\x22?\x3e\n\x3cVAST xmlns:xsi\x3d\x22http://www.w3.org/2001/XMLSchema-instance\x22 xsi:noNamespaceSchemaLocation\x3d\x22vast.xsd\x22 version\x3d\x223.0\x22\x3e\n \x3cAd id\x3d\x225343000414\x22\x3e\n  \x3cInLine\x3e\n   \x3cAdSystem\x3eGDFP\x3c/AdSystem\x3e\n   \x3cAdTitle\x3eunknown\x3c/AdTitle\x3e\n   \x3cDescription\x3e\x3c![CDATA[unknown ad]]\x3e\x3c/Description\x3e\n   \x3cError\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvideoplayfailed[ERRORCODE]]]\x3e\x3c/Error\x3e\n   \x3cImpression\x3e\x3c![CDATA[https://securepubads.g.doubleclick.net/pcs/view?xai\x3dAKAOjsvO7A2U23mS2lZyD1_KkrogxcPUvDmU6yuKrJbffxYy2tUecHzya2RzgPuepgna1exhtvGfNothdC2pNb5rgRKQSb2r3xw0NgF256_VacUdq4GqHeNZPv1nOxZpqsLTsBh78y1c_mNWJzIMfVjqtiMmxL6d89SvZhH9Br9a_3jjGt9GIAweF1iX20M1_gbBz-qFJblk7b41MAE0Jf6jMLv1L0pT2jWw3jr9vRCBsKlFeJcsrdsjZKok-NHVX-TH7crGj-mPNltiNeWrybbo2eXy11wONvbKCeCgztFRVahu2MDoHCcTsR1we0q2lA\x26sai\x3dAMfl-YTPl5DyWzTxs6_XtokuYieofXNLE23atPBigo_CBvYiLkOHA2lO9-IDnflyhzpZkKzS02JwTa5OUHtV5RK8Z_UUjdJDTYgwScFY8UV5ElVmp8It0o6bnLl9WF9x1zs\x26sig\x3dCg0ArKJSzGiAzGd1CiItEAE\x26urlfix\x3d1\x26adurl\x3d]]\x3e\x3c/Impression\x3e\n   \x3cCreatives\x3e\n    \x3cCreative id\x3d\x22138326192464\x22 sequence\x3d\x221\x22\x3e\n     \x3cLinear\x3e\n      \x3cDuration\x3e00:00:30\x3c/Duration\x3e\n      \x3cTrackingEvents\x3e\n       \x3cTracking event\x3d\x22start\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dpart2viewed\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22firstQuartile\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvideoplaytime25\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22midpoint\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvideoplaytime50\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22thirdQuartile\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvideoplaytime75\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22complete\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvideoplaytime100\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22mute\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dadmute\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22unmute\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dadunmute\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22rewind\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dadrewind\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22pause\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dadpause\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22resume\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dadresume\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22creativeView\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvast_creativeview\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22fullscreen\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dadfullscreen\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22acceptInvitationLinear\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dacceptinvitation\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22closeLinear\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dadclose\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n       \x3cTracking event\x3d\x22exitFullscreen\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvast_exit_fullscreen\x26ad_mt\x3d[AD_MT]\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\n      \x3c/TrackingEvents\x3e\n      \x3cVideoClicks\x3e\n       \x3cClickThrough id\x3d\x22GDFP\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pcs/click?xai\x3dAKAOjsuSUjoB1uVIJKWLbTKfS8oYxJytSRH6QOcICU9heYHXhPmxwhAGYSHBDplfaPLtAvAXC0musN_BP0KhemIaHkG-ApFFRh8wVo8TwNPo1BReNByocjvanckL1hqvfSTw4feeVcp_8BBy7MKs_BIOVhUyPmzlvehEavIrWoGUdLp5md3z9rGKZzO3DtUWDpfqGW_ygRQyw076111oNy6llVzLv3yypOFRGgCrJD_fH4o1afdcjV7TCVaU9ILAogRxK6H_6AZSs_FhV1sT\x26sai\x3dAMfl-YTQDSaJ6R9JxUVQ1Qjtv8sj2eaDUX4zLL_XBzB_sLtb6WFRV6g1e8UQj_Lb8kadtr318SW_bqcnl9DM0iMKUGmWkYDFTHqPquhAOwlsWVYoLCBd5NmqraQMoIXFFkY\x26sig\x3dCg0ArKJSzAA7ks3nmEWUEAE\x26urlfix\x3d1\x26adurl\x3dhttps://ad.doubleclick.net/ddm/trackclk/N296811.6440THENEWYORKTIMESCOMPA/B23771754.271090067%3Bdc_trk_aid%3D465899558%3Bdc_trk_cid%3D131102731%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Fhttps://www.nytimes.com/subscription/truth/truth-is-essential%3Fchannel%3Dodisplay%26areas%3Dbanner%26campaign%3Dtruthisessential]]\x3e\x3c/ClickThrough\x3e\n      \x3c/VideoClicks\x3e\n      \x3cMediaFiles\x3e\n       \x3cMediaFile id\x3d\x22GDFP\x22 delivery\x3d\x22progressive\x22 width\x3d\x22480\x22 height\x3d\x22270\x22 type\x3d\x22video/mp4\x22 bitrate\x3d\x22339\x22 scalable\x3d\x22true\x22 maintainAspectRatio\x3d\x22true\x22\x3e\x3c![CDATA[https://redirector.gvt1.com/videoplayback/id/78f01fc5c5ecd754/itag/18/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fmp4/ctier/L/ip/0.0.0.0/ipbits/0/expire/1606391685/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime,ctier/signature/9D960C3B3D4E9AE7C7DCEBDC5119708ED52FA407.39A4CECDA9D9EE377F11EE6802C9078E18E6FDD5/key/ck2/file/file.mp4]]\x3e\x3c/MediaFile\x3e\n       \x3cMediaFile id\x3d\x22GDFP\x22 delivery\x3d\x22progressive\x22 width\x3d\x22480\x22 height\x3d\x22270\x22 type\x3d\x22video/webm\x22 bitrate\x3d\x22366\x22 scalable\x3d\x22true\x22 maintainAspectRatio\x3d\x22true\x22\x3e\x3c![CDATA[https://redirector.gvt1.com/videoplayback/id/78f01fc5c5ecd754/itag/43/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2Fwebm/ctier/L/ip/0.0.0.0/ipbits/0/expire/1606391685/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime,ctier/signature/2CA8F6276BB98273E3D1C994289EB10585AC1CBE.492E8E13E5EFCC790F476350911FB780A385791B/key/ck2/file/file.webm]]\x3e\x3c/MediaFile\x3e\n       \x3cMediaFile id\x3d\x22GDFP\x22 delivery\x3d\x22streaming\x22 width\x3d\x22426\x22 height\x3d\x22240\x22 type\x3d\x22application/x-mpegURL\x22 minBitrate\x3d\x2245\x22 maxBitrate\x3d\x22248\x22 scalable\x3d\x22true\x22 maintainAspectRatio\x3d\x22true\x22\x3e\x3c![CDATA[https://redirector.gvt1.com/api/manifest/hls_variant/requiressl/yes/source/gfp_video_ads/id/78f01fc5c5ecd754/itag/0/playlist_type/LIVE/acao/yes/mime/application%2Fx-mpegURL/ctier/L/ip/0.0.0.0/ipbits/0/expire/1637906085/sparams/ip,ipbits,expire,requiressl,source,id,itag,playlist_type,acao,mime,ctier/signature/3D00D562197B973B31AE3F2B9037D9C0D354AFFA.253CBB5A77808F2C1E6D8CB4C9E1267D9F62C334/key/ck2/file/index.m3u8]]\x3e\x3c/MediaFile\x3e\n       \x3cMediaFile id\x3d\x22GDFP\x22 delivery\x3d\x22streaming\x22 width\x3d\x22426\x22 height\x3d\x22240\x22 type\x3d\x22application/dash+xml\x22 minBitrate\x3d\x2245\x22 maxBitrate\x3d\x22248\x22 scalable\x3d\x22true\x22 maintainAspectRatio\x3d\x22true\x22\x3e\x3c![CDATA[https://redirector.gvt1.com/api/manifest/dash/requiressl/yes/source/gfp_video_ads/id/78f01fc5c5ecd754/itag/0/playlist_type/LIVE/acao/yes/mime/application%2Fdash+xml/ctier/L/ip/0.0.0.0/ipbits/0/expire/1637906085/sparams/ip,ipbits,expire,requiressl,source,id,itag,playlist_type,acao,mime,ctier/signature/25A51C74D219A7D067DB08BA692F56EE650FC09E.9EDA62323979CF1C2FB3C1A5649C65B77D7BD8AC/key/ck2]]\x3e\x3c/MediaFile\x3e\n       \x3cMediaFile id\x3d\x22GDFP\x22 delivery\x3d\x22progressive\x22 width\x3d\x22320\x22 height\x3d\x22180\x22 type\x3d\x22video/3gpp\x22 bitrate\x3d\x22218\x22 scalable\x3d\x22true\x22 maintainAspectRatio\x3d\x22true\x22\x3e\x3c![CDATA[https://redirector.gvt1.com/videoplayback/id/78f01fc5c5ecd754/itag/36/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2F3gpp/ctier/L/ip/0.0.0.0/ipbits/0/expire/1606391685/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime,ctier/signature/6214A87C26E47067A7E4CE0FB55CDB018AEFFF33.9AF02A62552DA2C1B95CB422CC4B855D13142668/key/ck2/file/file.3gp]]\x3e\x3c/MediaFile\x3e\n       \x3cMediaFile id\x3d\x22GDFP\x22 delivery\x3d\x22progressive\x22 width\x3d\x22176\x22 height\x3d\x22144\x22 type\x3d\x22video/3gpp\x22 bitrate\x3d\x2285\x22 scalable\x3d\x22true\x22 maintainAspectRatio\x3d\x22true\x22\x3e\x3c![CDATA[https://redirector.gvt1.com/videoplayback/id/78f01fc5c5ecd754/itag/17/source/gfp_video_ads/requiressl/yes/acao/yes/mime/video%2F3gpp/ctier/L/ip/0.0.0.0/ipbits/0/expire/1606391685/sparams/ip,ipbits,expire,id,itag,source,requiressl,acao,mime,ctier/signature/97EFFFD54C9CB9D6827F6E2994E05E27C31833CA.B8E0EB645A7E7AB3B3D0419FF36B0B9BE68693DE/key/ck2/file/file.3gp]]\x3e\x3c/MediaFile\x3e\n      \x3c/MediaFiles\x3e\n     \x3c/Linear\x3e\n    \x3c/Creative\x3e\n   \x3c/Creatives\x3e\n   \x3cExtensions\x3e\x3cExtension type\x3d\x22geo\x22\x3e\x3cCountry\x3eIN\x3c/Country\x3e\x3cBandwidth\x3e0\x3c/Bandwidth\x3e\x3c/Extension\x3e\x3cExtension type\x3d\x22activeview\x22\x3e\x3cCustomTracking\x3e\x3cTracking event\x3d\x22abandon\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvideo_abandon\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\x3cTracking event\x3d\x22viewable_impression\x22\x3e\x3c![CDATA[https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjsunQAOT8CaqsK_IIBsKgKAft6JGAowTavKz07fuX2sDuuabFWR92UAkqoiKYb43Pkk0HAAi4o6es12vvoK-a7q82TfUVS5JbXFboIBSrnE\x26sig\x3dCg0ArKJSzNrRgYeFzp9cEAE\x26id\x3dlidarv\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]]]\x3e\x3c/Tracking\x3e\x3cTracking event\x3d\x22measurable_impression\x22\x3e\x3c![CDATA[https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjsunQAOT8CaqsK_IIBsKgKAft6JGAowTavKz07fuX2sDuuabFWR92UAkqoiKYb43Pkk0HAAi4o6es12vvoK-a7q82TfUVS5JbXFboIBSrnE\x26sig\x3dCg0ArKJSzNrRgYeFzp9cEAE\x26id\x3dlidarv\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]\x26avm\x3d1]]\x3e\x3c/Tracking\x3e\x3cTracking event\x3d\x22fully_viewable_audible_half_duration_impression\x22\x3e\x3c![CDATA[https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjsunQAOT8CaqsK_IIBsKgKAft6JGAowTavKz07fuX2sDuuabFWR92UAkqoiKYb43Pkk0HAAi4o6es12vvoK-a7q82TfUVS5JbXFboIBSrnE\x26sig\x3dCg0ArKJSzNrRgYeFzp9cEAE\x26id\x3dlidarv\x26acvw\x3d[VIEWABILITY]\x26gv\x3d[GOOGLE_VIEWABILITY]\x26avgm\x3d1]]\x3e\x3c/Tracking\x3e\x3c/CustomTracking\x3e\x3cActiveViewMetadata\x3e\x3c![CDATA[la\x3d0\x26xdi\x3d0\x26]]\x3e\x3c/ActiveViewMetadata\x3e\x3c/Extension\x3e\x3cExtension type\x3d\x22metrics\x22\x3e\x3cFeEventId\x3e\x3c/FeEventId\x3e\x3cAdEventId\x3eCKyPrfLCn-0CFW2DrAIdFmMDtg\x3c/AdEventId\x3e\x3c/Extension\x3e\x3cExtension type\x3d\x22video_ad_loaded\x22\x3e\x3cCustomTracking\x3e\x3cTracking event\x3d\x22loaded\x22\x3e\x3c![CDATA[https://pubads.g.doubleclick.net/pagead/conversion/?ai\x3dBjDmUJEO_X6ztPO2GssUPlsaNsAvHiYDaRQAAABABII6B8iM4AFjQ4oingwRg5bLkg6AOsgEPd3d3Lm55dGltZXMuY29tugEJZ2ZwX2ltYWdlyAEJ2gF4aHR0cHM6Ly93d3cubnl0aW1lcy5jb20vMjAxNC8wMy8xOC9zY2llbmNlL3NwYWNlL2RldGVjdGlvbi1vZi13YXZlcy1pbi1zcGFjZS1idXR0cmVzc2VzLWxhbmRtYXJrLXRoZW9yeS1vZi1iaWctYmFuZy5odG1smALIAcACAuACAOoCGy8yOTM5MDIzOC9ueXQvc2NpZW5jZS9zcGFjZfgC8NEekAOaCJgDpAOoAwHgBAHSBQYQ3u7e8xOQBgGgBh-oB-zVG6gH89EbqAeW2BvYBwDgBx_SCAkIgOGAQBABGB3YCAKACgWYCwGADAE\x26sigh\x3dzCd0Pfj0xQU\x26label\x3dvideo_ad_loaded]]\x3e\x3c/Tracking\x3e\x3c/CustomTracking\x3e\x3c/Extension\x3e\x3c/Extensions\x3e\n  \x3c/InLine\x3e\n \x3c/Ad\x3e\n\x3c/VAST\x3e\n","https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjsuSUjoB1uVIJKWLbTKfS8oYxJytSRH6QOcICU9heYHXhPmxwhAGYSHBDplfaPLtAvAXC0musN_BP0KhemIaHkG-ApFFRh8wVo8TwNPo1BReNByocjvanckL1hqvfSTw4feeVcp_8BBy7MKs_BIOVhUyPmzlvehEavIrWoGUdLp5md3z9rGKZzO3DtUWDpfqGW_ygRQyw076111oNy6llVzLv3yypOFRGgCrJD_fH4o1afdcjV7TCVaU9ILAogRxK6H_6AZSs_FhV1sT\x26sai\x3dAMfl-YTQDSaJ6R9JxUVQ1Qjtv8sj2eaDUX4zLL_XBzB_sLtb6WFRV6g1e8UQj_Lb8kadtr318SW_bqcnl9DM0iMKUGmWkYDFTHqPquhAOwlsWVYoLCBd5NmqraQMoIXFFkY\x26sig\x3dCg0ArKJSzAA7ks3nmEWUEAE\x26urlfix\x3d1\x26adurl\x3dhttps://ad.doubleclick.net/ddm/trackclk/N296811.6440THENEWYORKTIMESCOMPA/B23771754.271090067%3Bdc_trk_aid%3D465899558%3Bdc_trk_cid%3D131102731%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Fhttps://www.nytimes.com/subscription/truth/truth-is-essential%3Fchannel%3Dodisplay%26areas%3Dbanner%26campaign%3Dtruthisessential","https://pagead2.googlesyndication.com/simgad/7431581799068214520","en",3164974977,"_blank");</script>
+       </div>
+     </div>
+
+<a target="_blank" href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuSUjoB1uVIJKWLbTKfS8oYxJytSRH6QOcICU9heYHXhPmxwhAGYSHBDplfaPLtAvAXC0musN_BP0KhemIaHkG-ApFFRh8wVo8TwNPo1BReNByocjvanckL1hqvfSTw4feeVcp_8BBy7MKs_BIOVhUyPmzlvehEavIrWoGUdLp5md3z9rGKZzO3DtUWDpfqGW_ygRQyw076111oNy6llVzLv3yypOFRGgCrJD_fH4o1afdcjV7TCVaU9ILAogRxK6H_6AZSs_FhV1sT&amp;sai=AMfl-YTQDSaJ6R9JxUVQ1Qjtv8sj2eaDUX4zLL_XBzB_sLtb6WFRV6g1e8UQj_Lb8kadtr318SW_bqcnl9DM0iMKUGmWkYDFTHqPquhAOwlsWVYoLCBd5NmqraQMoIXFFkY&amp;sig=Cg0ArKJSzAA7ks3nmEWUEAE&amp;urlfix=1&amp;adurl=https://ad.doubleclick.net/ddm/trackclk/N296811.6440THENEWYORKTIMESCOMPA/B23771754.271090067%3Bdc_trk_aid%3D465899558%3Bdc_trk_cid%3D131102731%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Fhttps://www.nytimes.com/subscription/truth/truth-is-essential%3Fchannel%3Dodisplay%26areas%3Dbanner%26campaign%3Dtruthisessential">
+    <div class="content-container">
+      <div class="content-well">
+      <div class="logo">
+            <img onclick="eventTracker.generalEventTrack(&#39;clickURL&#39;, &#39;logo&#39;, &#39;https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuSUjoB1uVIJKWLbTKfS8oYxJytSRH6QOcICU9heYHXhPmxwhAGYSHBDplfaPLtAvAXC0musN_BP0KhemIaHkG-ApFFRh8wVo8TwNPo1BReNByocjvanckL1hqvfSTw4feeVcp_8BBy7MKs_BIOVhUyPmzlvehEavIrWoGUdLp5md3z9rGKZzO3DtUWDpfqGW_ygRQyw076111oNy6llVzLv3yypOFRGgCrJD_fH4o1afdcjV7TCVaU9ILAogRxK6H_6AZSs_FhV1sT&amp;sai=AMfl-YTQDSaJ6R9JxUVQ1Qjtv8sj2eaDUX4zLL_XBzB_sLtb6WFRV6g1e8UQj_Lb8kadtr318SW_bqcnl9DM0iMKUGmWkYDFTHqPquhAOwlsWVYoLCBd5NmqraQMoIXFFkY&amp;sig=Cg0ArKJSzAA7ks3nmEWUEAE&amp;urlfix=1&amp;adurl=https://ad.doubleclick.net/ddm/trackclk/N296811.6440THENEWYORKTIMESCOMPA/B23771754.271090067;dc_trk_aid=465899558;dc_trk_cid=131102731;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?https://www.nytimes.com/subscription/truth/truth-is-essential?channel=odisplay&amp;areas=banner&amp;campaign=truthisessential&#39;)" class="logo-std" src="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html">
+            <img onclick="eventTracker.generalEventTrack(&#39;clickURL&#39;, &#39;logo&#39;, &#39;https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuSUjoB1uVIJKWLbTKfS8oYxJytSRH6QOcICU9heYHXhPmxwhAGYSHBDplfaPLtAvAXC0musN_BP0KhemIaHkG-ApFFRh8wVo8TwNPo1BReNByocjvanckL1hqvfSTw4feeVcp_8BBy7MKs_BIOVhUyPmzlvehEavIrWoGUdLp5md3z9rGKZzO3DtUWDpfqGW_ygRQyw076111oNy6llVzLv3yypOFRGgCrJD_fH4o1afdcjV7TCVaU9ILAogRxK6H_6AZSs_FhV1sT&amp;sai=AMfl-YTQDSaJ6R9JxUVQ1Qjtv8sj2eaDUX4zLL_XBzB_sLtb6WFRV6g1e8UQj_Lb8kadtr318SW_bqcnl9DM0iMKUGmWkYDFTHqPquhAOwlsWVYoLCBd5NmqraQMoIXFFkY&amp;sig=Cg0ArKJSzAA7ks3nmEWUEAE&amp;urlfix=1&amp;adurl=https://ad.doubleclick.net/ddm/trackclk/N296811.6440THENEWYORKTIMESCOMPA/B23771754.271090067;dc_trk_aid=465899558;dc_trk_cid=131102731;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?https://www.nytimes.com/subscription/truth/truth-is-essential?channel=odisplay&amp;areas=banner&amp;campaign=truthisessential&#39;)" class="logo-hi-res" src="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html">
+          </div>
+        <div class="content-middle-well">
+          <div id="title2" class="title"></div>
+          <div class="summary"></div>
+          <div onclick="eventTracker.generalEventTrack(&#39;clickURL&#39;, &#39;cta&#39;, &#39;https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsuSUjoB1uVIJKWLbTKfS8oYxJytSRH6QOcICU9heYHXhPmxwhAGYSHBDplfaPLtAvAXC0musN_BP0KhemIaHkG-ApFFRh8wVo8TwNPo1BReNByocjvanckL1hqvfSTw4feeVcp_8BBy7MKs_BIOVhUyPmzlvehEavIrWoGUdLp5md3z9rGKZzO3DtUWDpfqGW_ygRQyw076111oNy6llVzLv3yypOFRGgCrJD_fH4o1afdcjV7TCVaU9ILAogRxK6H_6AZSs_FhV1sT&amp;sai=AMfl-YTQDSaJ6R9JxUVQ1Qjtv8sj2eaDUX4zLL_XBzB_sLtb6WFRV6g1e8UQj_Lb8kadtr318SW_bqcnl9DM0iMKUGmWkYDFTHqPquhAOwlsWVYoLCBd5NmqraQMoIXFFkY&amp;sig=Cg0ArKJSzAA7ks3nmEWUEAE&amp;urlfix=1&amp;adurl=https://ad.doubleclick.net/ddm/trackclk/N296811.6440THENEWYORKTIMESCOMPA/B23771754.271090067;dc_trk_aid=465899558;dc_trk_cid=131102731;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?https://www.nytimes.com/subscription/truth/truth-is-essential?channel=odisplay&amp;areas=banner&amp;campaign=truthisessential&#39;)" class="cta">.</div>
+		    <div class="disclaimer"></div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="img-container">
+      <img src="./18151212216902148135">
+    </div>
+
+    </a>
+
+  </div>
+</div>
+
+<div style="display: none;">
+<div style="position:absolute;top:0px;right:0px;width:1px;height:1px;visibility:hidden;border:none;"><script type="text/javascript">document.write('<script type="text/javascript" src="https://ad.doubleclick.net/ddm/trackimpj/N296811.6440THENEWYORKTIMESCOMPA/B23771754.271090067;dc_trk_aid=465899558;dc_trk_cid=131102731;ord=1127632859;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?"></scr'+'ipt>');</script><script type="text/javascript" src="./f(4).txt"></script></div>
+</div>
+
+
+<script type="text/javascript">
+
+var blueBtn = document.querySelector("img[src='https://www.gstatic.com/images/icons/material/system/2x/play_circle_filled_white_googblue_48dp.png']");
+
+window.onload = function(){
+if ( navigator.userAgent.indexOf("Firefox") > -1 || navigator.userAgent.indexOf("Safari") > -1 ){
+    blueBtn.src = "https://static01.nytimes.com/ads/adplatforms/user-interface-elements/video-icons/play.svg";
+    blueBtn.style.width = "40px";
+    blueBtn.style.height = "40px";
+    blueBtn.style.margin = "auto";
+    console.log("window loaded blue button selected");
+  } else {    
+      console.log("NOT A FF browser or Safari"); 
+      return false; 
+  }
+}; 
+
+
+// The icons fucntion is to style the native buttons on load
+
+function icons() {
+var pauseBtn = document.querySelector("img[src='https://www.gstatic.com/dfp/native/pause.png']");
+pauseBtn.style.left = "16px"; 
+pauseBtn.style.bottom ="15px"; 
+pauseBtn.style.background ="rgba(0, 0, 0, 0.5)"; 
+pauseBtn.style.border = "1px solid white"; 
+pauseBtn.style.padding ="2px"; 
+pauseBtn.style.width ="18px";
+pauseBtn.style.height ="18px";  
+pauseBtn.style.borderRadius ="50%";
+
+
+var soundOff = document.querySelector("img[src='https://www.gstatic.com/dfp/native/volume_off.png']"); 
+soundOff.style.left = "48px"
+soundOff.style.bottom = "15px"; 
+soundOff.style.background ="rgba(0, 0, 0, 0.5)"; 
+soundOff.style.border = "1px solid white"; 
+soundOff.style.padding ="2px"; 
+soundOff.style.width ="18px";
+soundOff.style.height ="18px"; 
+soundOff.style.borderRadius ="50%";
+
+var replayBtn =document.querySelector("img[src='https://www.gstatic.com/dfp/native/replay.png']");
+replayBtn.src = "https://static01.nytimes.com/ads/adplatforms/user-interface-elements/video-icons/play.svg";
+
+replayBtn.style.top = "40%"; 
+replayBtn.style.width = "40px"; 
+replayBtn.style.height ="40px"; 
+replayBtn.style.left="44%";
+
+};
+
+icons(); 
+
+
+function resize() {
+    if ( navigator.userAgent.indexOf("Firefox") > -1 || navigator.userAgent.indexOf("Safari") > -1) {
+    blueBtn.style.top = "38%";
+    blueBtn.style.left = "44%";
+    console.log("resize is firing")
+  } else {
+      console.log("Resize returning FALSE")
+      return false; 
+  }
+}
+
+var y = setInterval(resize, 150); 
+
+function clear() {
+    clearInterval(y); 
+    console.log("Interval cleared"); 
+}
+
+setTimeout(clear, 2000)
+
+
+ "use strict";
+
+// Native Tracking Code //
+
+var eventTracker = function () {
+var ETLink = "https://et.nytimes.com/?subject=dfp-ad-events&dfp_creativeid=138326192464&dfp_lineitemid=5343000414&dfp_orderid=2655822692&dfp_viewport=large&pageviewid=faEhXhHdVJyavmI0_65BqrZI&dfp_pos=mid2&dfp_prop=nyt";
+
+var slideCSSClass = "slide";
+var slideNavType = "slideURL";
+var slideClickType = "clickURL";
+
+//Slide navigation control
+var slidesNum = document.getElementsByClassName(slideCSSClass).length;
+var currentSlide = 1;
+
+/*
+* function to call the Nytimes ET pixel link for the slide templte
+* @param curr - current slide
+* @param type - event type 
+*/
+var ETSlideCall = function ETSlideCall(type, curr) {
+var next = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
+
+var trackingLink = ETLink + "&dfp_event_type=" + type + "&dfp_event_location=slide-" + curr;
+if (next != "") {
+trackingLink += "_" + "slide-" + next;
+}
+document.createElement('img').src = trackingLink;
+};
+//Public functions
+return {
+/*
+*Next slide function - Updates the current slide and call the ET function
+*/
+nextSlideET: function nextSlideET() {
+var prevSlide = currentSlide;
+if (currentSlide >= slidesNum) {
+currentSlide = 1;
+} else {
+currentSlide++;
+}
+ETSlideCall(slideNavType, prevSlide, currentSlide);
+},
+
+/*
+* Previous slide function - Updates the current slide and call the ET function
+*/
+prevSlideET: function prevSlideET() {
+var prevSlide = currentSlide;
+if (currentSlide <= 1) {
+currentSlide = slidesNum;
+} else {
+currentSlide--;
+}
+ETSlideCall(slideNavType, prevSlide, currentSlide);
+},
+
+/*
+* Click slide function - Redirects to target url
+* @param tag - HTML anchor tag the called this func. 
+* @param next - sums up to the current slide number 
+* usage: <a href="link-to-the-ad-redirect" onclick="eventTracker.slideClickET(this)">
+*/
+slideClickET: function slideClickET(tag) {
+var next = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+// console.log("this", tag);
+event.preventDefault();
+var slideTrack = currentSlide;
+if (next) {
+slideTrack = currentSlide == slidesNum ? 1 : currentSlide + 1;
+}
+ETSlideCall(slideClickType, slideTrack);
+var url = tag.href;
+window.open(url, '_blank');
+},
+
+/*
+* General event tracker call
+* @param eventType - event type to be tracked
+* @param eventLocation - event location to be tracked
+* @param redirectLink - Link to ad page to be called after eventtracker
+*/
+
+generalEventTrack: function generalEventTrack(type, curr) {
+var redirectLink = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
+
+event.preventDefault();
+var trackingLink = ETLink + "&dfp_event_type=" + type + "&dfp_event_location=" + curr;
+document.createElement('img').src = trackingLink;
+if (redirectLink != "") {
+window.open(redirectLink, '_blank');
+}
+  
+parent.postMessage({
+  event: 'send-direct',
+  payload: {
+    dfp_creativeid: '138326192464',
+    dfp_orderid: '2655822692',
+    dfp_viewport: 'large',
+    dfp_pos: 'mid2',
+    dfp_prop: 'nyt',
+    dfp_event_type: type,
+    dfp_event_location: curr,
+    subject: 'dfp-ad-events'
+  }
+},		
+'https://www.nytimes.com/'
+);
+  
+},
+
+setETLink: function setETLink(link) {
+ETLink = link;
+},
+
+setSlideCSSClass: function setSlideCSSClass(cssClass) {
+slideCSSClass = cssClass;
+slidesNum = document.getElementsByClassName(slideCSSClass).length;
+},
+setSlideClicktype: function setSlideClicktype(type) {
+slideClickType = type;
+},
+
+setSlideNavType: function setSlideNavType(type) {
+slideNavType = type;
+}
+};
+}();
+
+// End of Native Tracking Code // 
+
+
+(function() {
+  var mediaContainer = document.getElementById('media-container')
+  var tabletContent = mediaContainer.getElementsByClassName('media-content')[0];
+  var tabletCTA = mediaContainer.getElementsByClassName('cta')[0];
+  var tabletGradient = mediaContainer.getElementsByClassName('gradient')[0];
+  var tabletLogo = mediaContainer.getElementsByClassName('logo')[0];
+  var isIphone = navigator.userAgent.indexOf('iPhone') >= 0;
+
+if (isIphone) {
+  } else {
+    //Register the SafeFrame API extension and listen for viewable change.
+    try {
+      //$sf.ext.register(1605, 300, status_update);
+    } catch(e){
+      //console.log("Exception or no safeframes available: " + e.message);
+    }
+    //Toggle cover if video view percent passes 50.
+    function status_update(status, data)
+    {
+      if($sf.ext.inViewPercentage() < 50){ 
+        revealCover();
+        reset();
+      } else {
+        hideCover();
+      }
+    }
+  }
+  
+function revealCover () {
+    tabletContent.classList.remove('hidden');
+    tabletCTA.classList.add('hidden');
+    tabletGradient.classList.remove('hidden');
+    tabletLogo.classList.remove('hidden');
+  }
+
+  function hideCover () {
+    tabletContent.classList.add('hidden');
+    tabletCTA.classList.remove('hidden');
+    tabletGradient.classList.add('hidden');
+    tabletLogo.classList.remove('hidden');
+  }
+
+  function reset() {
+  }
+
+})();
+</script>
+
+<!--Remove JS code for context bullet
+<script type="text/javascript">
+(function() {
+  var header = document.getElementsByClassName('context-bullet')[0];
+  var headerContent = document.getElementsByClassName('context-bullet-content')[0];
+  var noHeaderPages = ['hp', 'int', 'art', 'art,rev', 'art,oak'];
+  var pageType = 'art';
+  var pagePos = 'mid2';
+  var prop = 'nyt';
+
+  if (pagePos === 'top') {
+    if (noHeaderPages.indexOf(pageType) > -1) {
+      header.style.display = 'none';
+    } else {
+      headerContent.style.display = 'none';
+    }
+  } else if (prop === 'itabapp') {
+    header.style.display = 'table';
+  } else if (pageType === 'hp') {
+    header.style.display = 'none';
+  } 
+})();
+</script>
+-->
+
+<script type="text/javascript">
+(function() {
+// Hide gradient if necessary
+var toggleGradient = 0;
+var gradients = [].slice.call(document.getElementsByClassName('gradient'));
+if (toggleGradient > 0) {
+  gradients.forEach(function(el) {
+    el.style.display = 'none';
+  });
+}
+})();
+</script>
+
+<div id="impression-pixel" class="impression-tracker">
+  <img src="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html" width="1" height="1" border="0">
+</div>
+<div id="impression-pixel-2" class="impression-tracker">
+  <img src="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html" width="1" height="1" border="0">
+</div>
+<script type="text/javascript">
+parent.postMessage({exclusive: , type: '', div:'story-ad-2'},'*');
+</script>
+
+<!-- Removed JS that removed the end of JS that checks for play pause-->
+<script>
+
+// code to check if the video is playing or not
+
+// Global Variables for setting purposes:
+var IntervalDelta = 200;
+var DimensionCutOffPoint = 975;
+var DEBUG = false;
+
+function checkforPlayPauseState () {
+  // local variables
+  var status;       // status check, to set the value if video is playing or not
+  var GVD;          // google native player within gets inserted by DFP
+  var imgLocation;  // image location of the video play / pause btn
+  var playPNG;      // storing the location of the play / pause btn
+
+
+  try {GVD = document.getElementById("google-native-video");} catch (Error) {}
+  try {imgLocation = GVD.children[2].src;} catch (Error) {}
+  try {playPNG = imgLocation.search("play");} catch (Error) {}
+
+  if (playPNG > -1) { status = "pause"; }
+  else { status = "playing"; }
+
+  return status;  // returning "pause" or "playing" strings
+}
+
+// function to continuously check to see if the video is playing or not
+setInterval(function(){ 
+
+  var intViewportWidth;     // checking the width of the browser
+  var mediaContent;         // mediaContent div storage 
+
+  try {intViewportWidth = window.innerWidth;} catch (Error) {}  // checking the width of the browser
+  try {mediaContent = document.querySelector(".media-content");} catch (Error) {}
+
+  if (intViewportWidth < DimensionCutOffPoint) {
+    var playPauseStats = checkforPlayPauseState();
+    if (playPauseStats == "pause") { 
+      try { mediaContent.style.display = "block";} 
+      catch(Error) {} 
+    }
+    else {
+      try { mediaContent.style.display = "none";} 
+      catch(Error) {} 
+    }
+
+    if (DEBUG) {console.log("checking ad video status :::: ",playPauseStats);}
+    
+  }
+  else {
+    try { mediaContent.style.display = "none";} catch(Error) {} 
+  }
+  
+ }, IntervalDelta);
+
+//  end of code to check if the video is playing or not
+
+
+
+
+
+</script>
+
+</div><div style="bottom:0;right:0;width:100px;height:100px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:pixelated !important;z-index:2147483647;background-image:url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB9SURBVBjTbZCBDQMxDALJBuw/bVUwNqrqSPlYT/AF4H89lw/XgfpLkN9jOinghe2sGyGvW/X7Vceb7T2zZy1JinvT3BA0MNywWIMPZ9p3FW3UuiFvmsek7RvvI6FJ9DlfEXmrVwI7hJVCnulHLHL03i6zSqYTrByLZDwd4AeVzwXs2YYnngAAAABJRU5ErkJggg==&#39;) !important;"></div>
+  
+  
+  
+
+<iframe src="./Enqz_20U(1).html" width="0" height="0" style="display: none;"></iframe></body></html>
