@@ -235,7 +235,8 @@ p > span {
   margin: 0;
 }
 
-time {
+time,
+.time {
   font-size: 0.8rem;
 }
 
