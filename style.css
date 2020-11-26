@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&family=Libre+Franklin:wght@500&display=swap');
 
-
 /* CSS Quick Fixes */
 
 :root {
@@ -78,6 +77,15 @@ p > span {
   font-weight: 700;
 }
 
+.fixed-footer button {
+  float: right;
+  margin-right: 300px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
 .left > ul > li button {
   border: none;
   background-color: transparent;
@@ -133,7 +141,7 @@ p > span {
 }
 
 .more a {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--button-bg-hover-color);
   text-decoration: none;
   font-weight: 700;
@@ -175,7 +183,7 @@ p > span {
 .fixed-footer p a {
   color: var(--text-color-dark);
   text-decoration: none;
-  padding: 1.em;
+  padding: 1em;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -242,7 +250,6 @@ p > span {
   margin: 0 auto;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 700;
-  letter-spacing: 1.2;
 }
 
 /* CSS for cover image */
@@ -484,7 +491,7 @@ time,
   padding: 1em;
 }
 
-.start{
+.start {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.8em;
@@ -519,6 +526,7 @@ time,
 .box .time {
   color: var(--text-color-light);
 }
+
 .box h2 {
   font-size: 1rem;
 }
@@ -645,7 +653,6 @@ time,
   justify-content: center;
 }
 
-
 /* ----fixed footer-------- */
 
 .fixed-footer {
@@ -655,13 +662,4 @@ time,
   bottom: 0;
   background-color: #fff;
   cursor: pointer;
-}
-
-.fixed-footer button {
-  float: right;
-  margin-right: 300px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
 }
