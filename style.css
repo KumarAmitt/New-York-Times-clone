@@ -156,6 +156,9 @@ p > span {
   text-decoration: underline;
 }
 
+.read-button a:hover {
+  background-color: var(--button-bg-hover-color);
+}
 
 .social-links > li > a:hover {
   border: 0.4px solid var(--text-color-light);
@@ -167,9 +170,6 @@ p > span {
   text-decoration: none;
 }
 
-.read-button a:hover {
-  background-color: var(--button-bg-hover-color);
-}
 
 .master-footer-bottom ul a:hover {
   text-decoration: underline;
@@ -309,6 +309,10 @@ time,
   font-size: 0.8rem;
 }
 
+.video-caption > span {
+  text-transform: inherit;
+}
+
 .advt-bottom p span {
   font-weight: 700;
 }
@@ -328,9 +332,6 @@ time,
   height: 340px;
 }
 
-.video-caption > span {
-  text-transform: inherit;
-}
 /* CSS for Secondary Image  */
 
 .secondary-image {
