@@ -152,14 +152,16 @@ p > span {
   font-weight: 700;
 }
 
+.article-title > a:hover {
+  text-decoration: underline;
+}
+
+
 .social-links > li > a:hover {
   border: 0.4px solid var(--text-color-light);
   background-color: #fff;
 }
 
-.article-title > a:hover {
-  text-decoration: underline;
-}
 
 .article-footer > small a:hover {
   text-decoration: none;
