@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Libre+Franklin:wght@500&display=swap');
+
+
 /* CSS Quick Fixes */
 
 :root {
@@ -22,7 +25,8 @@ body * + * {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Castoro', serif;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   color: var(--text-color-dark);
@@ -129,6 +133,12 @@ p > span {
   padding: 0.25em;
 }
 
+.social-links > li > .bookmark,
+.social-links > li > .comments {
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+
 .article-footer > small a {
   padding: 0 0.4em;
   color: var(--text-color-light);
@@ -194,9 +204,12 @@ p > span {
   color: #000;
   text-transform: capitalize;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 2.2rem;
   max-width: 640px;
   margin: 0 auto;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2;
 }
 
 /* CSS for cover image */
@@ -275,22 +288,11 @@ time,
   font-weight: 700;
 }
 
-/* CSS for Inflaction Image */
-
-/* .inflaction-image {
-  display: block;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.inflaction-image-caption {
-  font-size: 0.9rem;
-} */
-
 /* CSS for Inflaction-container */
 
 .inflaction-container h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .inflaction-grid {
@@ -298,21 +300,21 @@ time,
   background-image: url("assets/images/inflaction.png");
   background-size: cover;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
 }
 
 .inflaction-text {
   font-size: 0.8rem;
   color: var(--text-color-light);
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .inflaction-text span {
   text-transform: uppercase;
   color: var(--text-color-dark);
   font-weight: 700;
-}
-
-.inflaction-box {
-  margin: 1em;
+  font-size: 0.7rem;
 }
 
 .diagram {
@@ -414,6 +416,7 @@ time,
   max-width: 94vw;
   margin: 3em auto;
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .sponsors-left {
@@ -438,18 +441,89 @@ time,
   display: flex;
 }
 
+.newsletter-content > .box {
+  flex: 1;
+  border: 1px solid var(--text-color-light);
+  padding: 1em;
+}
+
+.start{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8em;
+}
+
+
+.plus a {
+  font-size: 2rem;
+  border: 1.2px solid #000;
+  text-decoration: none;
+  padding: 0 0.25em;
+  border-radius: 50%;
+  color: #000;
+  font-weight: 500;
+}
+
+.more {
+  display: block;
+}
+
+.more a {
+  font-size: .9rem;
+  color: var(--button-bg-hover-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.more a:hover {
+  text-decoration: underline;
+}
+
+.plus a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.central-box {
+  margin: 0 1em;
+}
+
 .newsletter-content * + *,
 .astronomy * + * {
   margin-top: 0;
+}
+
+.image-source {
+  font-size: 0.8rem;
+  color: var(--text-color-light);
+  text-align: right;
 }
 
 .box {
   padding: 0 0.5em;
 }
 
+.box h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--text-color-light);
+}
+
+.box .time {
+  color: var(--text-color-light);
+}
+.box h2 {
+  font-size: 1rem;
+}
+
 .tiny-image {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
+}
+
+.newsletter .newsletter-content .no-border {
+  border: none;
 }
 
 .astronomy {
@@ -485,7 +559,7 @@ time,
 /* CSS for page master footer */
 
 .master-footer {
-  margin: 1em 3em;
+  margin: 1em 3em 4em;
   border-top: 4px solid gray;
   border-top-style: double;
 }
@@ -558,4 +632,37 @@ time,
   font-size: 0.8rem;
   margin: 0 auto;
   justify-content: center;
+}
+
+
+/* ----fixed footer-------- */
+
+.fixed-footer {
+  border-top: 1px solid #000;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.fixed-footer p {
+  float: left;
+  margin-left: 400px;
+}
+
+.fixed-footer p a {
+  color: var(--text-color-dark);
+  text-decoration: none;
+  padding: 1.em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fixed-footer button {
+  float: right;
+  margin-right: 300px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
 }

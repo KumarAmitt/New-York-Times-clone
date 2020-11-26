@@ -46,8 +46,8 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fas fa-envelope"></i></a></li>
                         <li><a href="#"><i class="fas fa-share"></i></a></li>
-                        <li><a href="#"><i class="far fa-bookmark"></i></a></li>
-                        <li><a href="#"><i class="far fa-comment-alt"></i></a></li>
+                        <li><a class="bookmark" href="#"><i class="far fa-bookmark"></i></a></li>
+                        <li><a class="comments" href="#"><i class="far fa-comment-alt"></i></a></li>
                     </ul>
                 </div>
             </header>
@@ -149,11 +149,6 @@
 
                 <p class="inflaction-container-caption">By LARRY BUCHANAN and JONATHAN CORUM</p>
             </div>
-
-            <!-- <figure>
-                <img class="inflaction-image" src="assets/images/inflaction.png" alt="The Theory of inflaction">
-                <figcaption class="inflaction-image-caption">By LARRY BUCHANAN and JONATHAN CORUM</figcaption>
-            </figure> -->
 
             <section class="main-content">
                 <p>Dr. Kovac said the chance that the results were a fluke was only one in 10 million.</p>
@@ -291,25 +286,34 @@
                 <div class="newsletter-content">
 
                     <div class="box">
-                        <img class="tiny-image" src="assets/images/morning.svg" alt="">
+                        <div class="start">
+                            <img class="tiny-image" src="assets/images/morning.svg" alt="">
+                            <div class="plus"><a href="#">+</a></div>
+                        </div>
                         <h3>Daily</h3>
                         <h2>The Morning</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis.</p>
+                        <p>Make sense of the day's news and ideas. David Leonhardit and Times journlists guide yoy through what's happening - and why it matters</p>
                         <p class="more"><a href="#">see the latest</a></p>
                     </div>
-                    <div class="box">
-                        <img class="tiny-image" src="assets/images/Breaking.png" alt="">
-                        <h3>Daily</h3>
-                        <h2>The Morning</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis.</p>
+                    <div class="box central-box">
+                        <div class="start">
+                            <img class="tiny-image" src="assets/images/Breaking.png" alt="">
+                            <div class="plus"><a href="#">+</a></div>
+                        </div>
+                        <h3>As needed</h3>
+                        <h2>Breaking News</h2>
+                        <p>Alerts when important news breaks around the world</p>
                         <p class="more"><a href="#">see the latest</a></p>
                     </div>
 
                     <div class="box">
-                        <img class="tiny-image" src="assets/images/home.png" alt="">
-                        <h3>Daily</h3>
-                        <h2>The Morning</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis.</p>
+                        <div class="start">
+                            <img class="tiny-image" src="assets/images/home.png" alt="">
+                            <div class="plus"><a href="#">+</a></div>
+                        </div>
+                        <h3>Weekly</h3>
+                        <h2>At Home</h2>
+                        <p>Our best siggestions for how to live a full and cultured life during the pandemic, at home</p>
                         <p class="more"><a href="#">see the latest</a></p>
                     </div>
 
@@ -322,20 +326,20 @@
 
                     <div class="box">
                         <img class="sponsor-img" src="assets/images/moon-mission.jpg" alt="">
-                        <p class="image-source">Lorem, ipsum.</p>
-                        <p class="target">Lorem ipsum dolor sit amet.</p>
+                        <p class="image-source">Tingshu Wang/Reuters</p>
+                        <p class="target">China Launches Moon Mission to Bring Back Lunar Rocks</p>
                         <p class="time">Nov, 16<p>
                     </div>
                     <div class="box">
                         <img class="sponsor-img" src="assets/images/arecibo.jpg" alt="">
-                        <p class="image-source">Lorem, ipsum.</p>
-                        <p class="target">Lorem ipsum dolor sit amet.</p>
+                        <p class="image-source">K.C. Wllsey, via Alamy</p>
+                        <p class="target">Arecibo Obsevatory, a Great Eye on the Cosmos, Is Going Dark</p>
                         <p class="time">Nov, 16<p>
                     </div>
                     <div class="box">
                         <img class="sponsor-img" src="assets/images/moon-mission.jpg" alt="">
-                        <p class="image-source">Lorem, ipsum.</p>
-                        <p class="target">Lorem ipsum dolor sit amet.</p>
+                        <p class="image-source">PAID POST: Taiwan Excellence</p>
+                        <p class="target">How an Island Nation Geared Up Against Covid-19</p>
                         <p class="time">Nov, 16<p>
                     </div>
                     <div class="box">
@@ -366,21 +370,21 @@
 
                 <div class="newsletter-content">
 
-                    <div class="box">
+                    <div class="box no-border">
                         <img class="sponsor-img" src="assets/images/american-life.jpg" alt="">
                         <p class="image-source">Lorem, ipsum.</p>
                         <p class="target">Lorem ipsum dolor sit amet.</p>
                         <p class="time">Nov, 16<p>
                     </div>
 
-                    <div class="box">
+                    <div class="box no-border">
                         <img class="sponsor-img" src="assets/images/Mazzucato.jpg" alt="">
                         <p class="image-source">Lorem, ipsum.</p>
                         <p class="target">Lorem ipsum dolor sit amet.</p>
                         <p class="time">Nov, 16<p>
                     </div>
 
-                    <div class="box">
+                    <div class="box no-border">
                         <img class="sponsor-img" src="assets/images/sunset.jpg" alt="">
                         <p class="image-source">Lorem, ipsum.</p>
                         <p class="target">Lorem ipsum dolor sit amet.</p>
@@ -510,6 +514,7 @@
                     <li class="smaller"><a href="#">International</a></li>
                     <li class="smaller"><a href="#">Canada</a></li>
                     <li class="smaller"><a href="#">Espanol</a></li>
+                    <li class="smaller"><a href="#">中文网</a></li>
                 </ul>
                 
             </div>
@@ -533,6 +538,11 @@
         </div>
 
     </footer>
+
+    <div class="fixed-footer">
+            <p><a href="#">Access more of The Times by creating a free account  or logging in.</a></p>
+            <button type="button">Expand</button>
+    </div>
 
 
     <script src="https://kit.fontawesome.com/cec8e0eed3.js" crossorigin="anonymous"></script>
