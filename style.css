@@ -277,7 +277,7 @@ time,
 
 /* CSS for Inflaction Image */
 
-.inflaction-image {
+/* .inflaction-image {
   display: block;
   max-width: 90%;
   margin: 0 auto;
@@ -285,8 +285,42 @@ time,
 
 .inflaction-image-caption {
   font-size: 0.9rem;
+} */
+
+/* CSS for Inflaction-container */
+
+.inflaction-container h2 {
+  font-size: 1.2rem;
+}
+.inflaction-grid {
+  display: grid;
+  background-image: url("assets/images/inflaction.png");
+  background-size: cover;
+  grid-template-columns: repeat(4, 1fr);
 }
 
+.inflaction-text {
+  font-size: 0.8rem;
+  color: var(--text-color-light);
+}
+
+.inflaction-text span {
+  text-transform: uppercase;
+  color: var(--text-color-dark);
+  font-weight: 700;
+}
+
+.inflaction-box {
+  margin: 1em;
+}
+
+.diagram {
+  height: 6em;
+}
+
+.inflaction-container-caption {
+  font-size: .9rem;
+}
 /* CSS for bottom-advt */
 
 .advt-bottom {
@@ -433,6 +467,17 @@ time,
   margin-left: 2rem;
   border-top: 1px solid #000;
   margin-top: 0;
+}
+
+.popular p {
+  border-top: 0.5px solid var(--icons-bg-color);
+  padding-top: 1em;
+  color: var(--text-color-dark);
+}
+
+.popular p:hover{
+  color: var(--text-color-light);
+  cursor: pointer;
 }
 
 /* CSS for page master footer */
