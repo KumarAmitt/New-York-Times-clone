@@ -1,0 +1,48 @@
+body {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+}
+
+form {
+    padding: 2em;
+    margin-top: 2rem;
+}
+
+form > * {
+    display: block;
+}
+
+
+label,
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0.2em;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 70%;
+}
+
+[type="checkbox"] {
+    margin-top: 1em;
+}
+
+button {
+    border: none;
+    padding: 0.5em 3em;
+    background-color: #567b95;
+    color: #fff;
+    border-radius: 0.2em;
+    margin-top: 2em;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #3b5568;
+}
