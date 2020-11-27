@@ -108,7 +108,6 @@ p > span {
   font-weight: 700;
   font-size: 0.9rem;
   color: #000;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .advt-top a {
@@ -187,7 +186,6 @@ p > span {
   color: var(--text-color-dark);
   text-decoration: none;
   padding: 1em;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .right > ul li a {
@@ -251,7 +249,6 @@ p > span {
   font-size: 2.2rem;
   max-width: 640px;
   margin: 0 auto;
-  /* font-family: 'Libre Franklin', sans-serif; */
   font-weight: 700;
 }
 
@@ -350,7 +347,6 @@ time,
   font-size: 0.8rem;
   color: var(--text-color-light);
   margin-top: 0;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .inflaction-text span {
@@ -579,6 +575,12 @@ time,
   margin-left: 400px;
 }
 
+.row p {
+  margin-left: 1em;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+
 .popular p:hover {
   color: var(--text-color-light);
   cursor: pointer;
@@ -674,7 +676,6 @@ time,
   cursor: pointer;
 }
 
-
 /* --------aside item--------- */
 
 .central-info {
@@ -703,10 +704,4 @@ aside h4 {
 .row img {
   height: 50px;
   width: 50px;
-}
-
-.row p {
-  margin-left: 1em;
-  margin-top: 0;
-  font-size: 0.8rem;
 }
