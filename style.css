@@ -24,8 +24,8 @@ body * + * {
 }
 
 body {
-  font-family: 'Castoro', serif;
-  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
   color: var(--text-color-dark);
@@ -49,6 +49,7 @@ p > span {
   width: 100vw;
   position: fixed;
   top: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-container {
@@ -107,7 +108,7 @@ p > span {
   font-weight: 700;
   font-size: 0.9rem;
   color: #000;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .advt-top a {
@@ -179,13 +180,14 @@ p > span {
 .master-footer-title small a {
   color: var(--link-text-color);
   text-decoration: none;
+  font-size: 0.7rem;
 }
 
 .fixed-footer p a {
   color: var(--text-color-dark);
   text-decoration: none;
   padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .right > ul li a {
@@ -238,7 +240,7 @@ p > span {
 /* CSS for MAIN section of the page */
 
 .main {
-  max-width: 1080px;
+  max-width: 1000px;
   margin: 4em auto 0;
 }
 
@@ -249,7 +251,7 @@ p > span {
   font-size: 2.2rem;
   max-width: 640px;
   margin: 0 auto;
-  font-family: 'Libre Franklin', sans-serif;
+  /* font-family: 'Libre Franklin', sans-serif; */
   font-weight: 700;
 }
 
@@ -348,7 +350,7 @@ time,
   font-size: 0.8rem;
   color: var(--text-color-light);
   margin-top: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .inflaction-text span {
@@ -453,11 +455,11 @@ time,
 /* ---------------Sponsor section------------- */
 
 .sponsors {
-  /* border-bottom: 2px solid gray; */
   max-width: 94vw;
   margin: 3em auto;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 .sponsors-left {
@@ -558,12 +560,18 @@ time,
   margin-left: 2rem;
   border-top: 1px solid #000;
   margin-top: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.popular > h2 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .popular p {
   border-top: 0.5px solid var(--icons-bg-color);
   padding-top: 1em;
   color: var(--text-color-dark);
+  font-size: 1.2rem;
 }
 
 .fixed-footer p {
@@ -582,6 +590,7 @@ time,
   margin: 1em 3em 4em;
   border-top: 4px solid gray;
   border-top-style: double;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .master-footer-title {
@@ -663,4 +672,41 @@ time,
   bottom: 0;
   background-color: #fff;
   cursor: pointer;
+}
+
+
+/* --------aside item--------- */
+
+.central-info {
+  display: flex;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: 0;
+  align-items: center;
+}
+
+.central-info > aside {
+  margin-left: -3em;
+  margin-right: 2em;
+}
+
+aside h4 {
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--text-color-light);
+  padding-bottom: 1em;
+}
+
+.row {
+  display: flex;
+}
+
+.row img {
+  height: 50px;
+  width: 50px;
+}
+
+.row p {
+  margin-left: 1em;
+  margin-top: 0;
+  font-size: 0.8rem;
 }
