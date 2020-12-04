@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form>
+
+        <h2>Please share your Openion</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="20" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" maxlength="20" required>
+
+        <label for="comments">Write your comment here:</label>
+        <textarea name="comment" id="comments" maxlength="250" required></textarea>
+
+        <p>What is your overall opinion about this article</p>
+        <label><input type="radio" name="opinion" value="positive">Poitive</label>
+        <label><input type="radio" name="opinion" value="negative">Negative</label>
+        <label><input type="radio" name="opinion" value="neutral">Neutral</label>
+
+        <label><input type="checkbox" value="subscribe">I want to subscribe to the newsletter</label>
+
+        <button type="submit">Send</button>
+
+    </form>
+</body>
+</html>
